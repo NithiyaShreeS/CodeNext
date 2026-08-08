@@ -7,17 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
-/**
- * CodeNext – Personalized Coding Problem Recommendation System
- * 
- * A complete Java console application demonstrating object-oriented design,
- * collections usage, user management, submission tracking, and a dynamic 
- * personalized recommendation algorithm.
- */
-
-// ============================================================================
 // MODEL CLASSES
-// ============================================================================
 
 /**
  * Represents a user in the system.
@@ -162,9 +152,7 @@ class Recommendation {
     }
 }
 
-// ============================================================================
 // ENGINE CLASSES
-// ============================================================================
 
 /**
  * Handles evaluation of user metrics, skill level, weak topics, and recommendation generation.
@@ -346,9 +334,7 @@ class RecommendationEngine {
     }
 }
 
-// ============================================================================
 // MAIN APPLICATION CLASS
-// ============================================================================
 
 public class CodeNext {
 
@@ -375,9 +361,7 @@ public class CodeNext {
         }
     }
 
-    // ------------------------------------------------------------------------
     // DATA INITIALIZATION
-    // ------------------------------------------------------------------------
 
     private static void initializeRepository() {
         problemRepository.add(new CodingProblem(101, "Two Sum", "Arrays", "Easy", "Find two numbers in an array that add up to a target sum.", "Beginner"));
@@ -406,9 +390,7 @@ public class CodeNext {
         userHistory.put("alex", new ArrayList<>());
     }
 
-    // ------------------------------------------------------------------------
     // AUTHENTICATION MENU & HANDLERS
-    // ------------------------------------------------------------------------
 
     private static void showAuthMenu() {
         System.out.println("\n========================================");
